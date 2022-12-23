@@ -1,0 +1,483 @@
+/* Project Theme Colors */
+
+:root {
+    --mainblack: #040E27;
+    --maingray: #7A838B;
+    --mainwhite: #ffffff;
+    --mainred: #FF4A52;
+    --mainblue: #1EC6B6;
+}
+
+
+/* Project Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all ease .2s;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: var(--mainblack);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    transition: all ease .2s;
+}
+
+a {
+    text-decoration: none;
+    transition: all ease .2s;
+}
+
+a:hover,
+li:hover {
+    color: var(--mainred);
+    cursor: pointer;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.row {
+    display: flex !important;
+    width: 100% !important;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--mainwhite);
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--mainblue);
+}
+
+
+/* Start Header style */
+
+.header-menu {
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainwhite);
+}
+
+.header-logo {
+    padding: 0 15px;
+}
+
+.menu {
+    display: none;
+}
+
+.menu ul li {
+    padding: 0px 15px;
+    font-size: 18px;
+}
+
+.menu-icon {
+    color: var(--mainwhite);
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon {
+    background-color: var(--mainred);
+    padding: 30px 15px;
+    cursor: pointer;
+}
+
+.burger-menu-icon {
+    background-color: var(--mainblue);
+    display: inline-block;
+    padding: 30px 15px;
+    cursor: pointer;
+}
+
+.header-banner {
+    text-align: center;
+    background-image: url("../img/banner2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.header-banner h1 {
+    font-size: 8vw;
+    padding: 10vh 0;
+    color: var(--mainwhite);
+    font-family: "Nothing You Could Do", cursive, sans-serif;
+}
+
+.header-banner h3 {
+    font-size: 3vw;
+    font-weight: 500;
+    padding-bottom: 15vh;
+    color: var(--mainwhite);
+}
+
+.explore {
+    background-color: var(--mainblue);
+    font-size: 2vw;
+    margin-bottom: 15vh;
+}
+
+.explore:hover {
+    background-color: var(--mainred);
+}
+
+.travel {
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    background-color: var(--mainblack);
+    align-items: center;
+}
+
+.travel-title {
+    font-size: 20px;
+    color: var(--mainwhite);
+    margin-bottom: 10px;
+}
+
+.travel-input {
+    padding: 10px 5px;
+    border: 1px solid var(--maingray);
+    width: 80vw;
+    margin: 5px auto;
+    border-radius: 10px;
+    background: none;
+}
+
+.travel-btn {
+    display: block;
+    background-color: var(--mainred);
+    width: 30vw;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 11px 5px;
+}
+
+.travel-btn:hover {
+    background-color: var(--mainblue);
+}
+
+.travel-input:focus {
+    color: var(--mainwhite);
+}
+
+
+/* End Header style */
+
+
+/* Start popular style */
+
+.popular {
+    justify-content: center;
+    padding-top: 5vh;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+.popular-heading {
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 5vh;
+}
+
+.popular-title {
+    text-align: center;
+    padding-bottom: 2vh;
+    font-size: 7vw;
+    font-family: cursive, "Roboto", sans-serif;
+}
+
+.popular-text {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 7vh;
+    line-height: 25px;
+    color: var(--maingray);
+}
+
+.card-group {
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.card {
+    padding: 0;
+    position: relative;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: var(--mainblack);
+    transition: all ease .5s;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+}
+
+.card-overly-text {
+    color: var(--mainwhite);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.card-overly-suffix {
+    font-size: .8rem;
+    font-weight: 500;
+    background-color: var(--mainblue);
+    border-radius: 25px;
+    padding: 8px;
+    margin-left: 15px;
+}
+
+.card-overly {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.card:hover .card-overly-text {
+    color: var(--mainred);
+}
+
+.card:hover .card-overly-suffix {
+    color: var(--mainwhite);
+    background-color: var(--mainred);
+}
+
+
+/* End popular style */
+
+
+/* Start Newsletter style */
+
+.newsletter {
+    position: relative;
+    margin: 20px auto;
+    padding: 50px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url("../img/newsletter.png") left no-repeat;
+    background-size: cover;
+    flex-flow: column;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.newsletter-darken {
+    position: absolute;
+    background: var(--mainblack);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: 1;
+}
+
+.newsletter-btn {
+    background-color: var(--mainred);
+    border: 1px solid var(--mainred);
+    z-index: 999;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.newsletter-form {
+    z-index: 999;
+    width: 90%;
+}
+
+.newsletter-input {
+    padding: 17px 10px;
+    border-radius: 5px;
+    background-color: var(--mainwhite);
+    border: none;
+    width: calc(100% - 20px);
+    z-index: 999;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.newsletter-input:focus {
+    border: none;
+}
+
+.newsletter-input::placeholder {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.newsletter-heading {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    text-align: center;
+}
+
+.newsletter-heading h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+    z-index: 999;
+    color: var(--mainwhite);
+    font-family: cursive, "Roboto", sans-serif;
+}
+
+.newsletter-heading p {
+    color: var(--maingray);
+    z-index: 999;
+    padding-bottom: 30px;
+    font-size: 1rem;
+}
+
+
+/* End Newsletter style */
+
+
+/* Start Video style */
+
+.video {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/video.png") center no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.video::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #040E27;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+    z-index: 1;
+}
+
+.video-title {
+    font-size: 7vw;
+    font-family: cursive, "Roboto", sans-serif;
+    color: var(--mainwhite);
+    margin-top: 50px;
+    font-weight: 500;
+    z-index: 999;
+}
+
+.video-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+    border-radius: 100%;
+    color: var(--mainwhite);
+    background-color: var(--mainblue);
+    width: 15vw;
+    height: 15vw;
+    margin: 30px auto;
+    z-index: 999;
+}
+
+.video-icon:hover {
+    background-color: var(--mainred);
+    cursor: pointer;
+}
+
+
+/* End Video style */
+
+
+/* Start Footer Style */
+
+.footer {
+    background-color: var(--mainblack);
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+    flex-flow: wrap;
+}
+
+.footer-left {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-right {
+    padding: 20px;
+}
+
+.footer-logo {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-left-text {
+    color: var(--maingray);
+    line-height: 25px;
+    text-align: center;
+}
+
+.footer-right-list {
+    color: var(--maingray);
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.footer-right-text {
+    color: var(--maingray);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+}
+
+.footer-right-list-container {
+    justify-content: space-between;
+}
+
+
+/* End Footer Style */
